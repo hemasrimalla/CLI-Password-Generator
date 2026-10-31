@@ -1,0 +1,234 @@
+================================================================================
+           CLI PASSWORD GENERATOR - SAMPLE TERMINAL SESSIONS
+                 Level 1 Internship Project (Task 31)
+================================================================================
+DISCLAIMER: All passwords shown below are non-secret, randomly generated SAMPLES
+used solely for testing, grading, and demonstration purposes. Do NOT use these
+specific sample strings for any personal or production accounts.
+================================================================================
+
+
+--------------------------------------------------------------------------------
+SAMPLE RUN 1: Recommended Strong Password (16 Characters, All 4 Character Types)
+--------------------------------------------------------------------------------
+$ python password_generator.py
+============================================================
+             CONFIGURABLE CLI PASSWORD GENERATOR
+             Level 1 Internship Project (Task 31)
+============================================================
+
+Enter password length (8-128): 16
+
+Select character types to include:
+  Include lowercase letters (a-z)? [Y/n]: y
+  Include uppercase letters (A-Z)? [Y/n]: y
+  Include digits (0-9)? [Y/n]: y
+  Include special symbols (!@#$%...)? [Y/n]: y
+
+How many passwords to generate (1-100) [Default: 1]: 3
+
+============================================================
+                    CONFIGURATION SUMMARY
+============================================================
+  Length:            16 characters
+  Character Types:   Lowercase, Uppercase, Digits, Symbols (4/4)
+  Strength Rating:   [STRONG] - Excellent length and diverse character variety.
+============================================================
+                    GENERATED PASSWORD(S)
+============================================================
+  [01]  k9#M$xR8!vP2*wTq
+  [02]  B5@zL#1pY&9dF!mQ
+  [03]  vX8%wE2^rT9$kL@p
+============================================================
+  [Security Notice] Generated passwords are held strictly in memory
+  and are NOT stored or written to any file automatically.
+============================================================
+
+Would you like to generate another batch? [y/N]: n
+
+Thank you for using the CLI Password Generator. Stay secure!
+
+
+--------------------------------------------------------------------------------
+SAMPLE RUN 2: Medium Strength Alphanumeric Password (12 Characters, No Symbols)
+--------------------------------------------------------------------------------
+$ python password_generator.py
+============================================================
+             CONFIGURABLE CLI PASSWORD GENERATOR
+             Level 1 Internship Project (Task 31)
+============================================================
+
+Enter password length (8-128): 12
+
+Select character types to include:
+  Include lowercase letters (a-z)? [Y/n]: y
+  Include uppercase letters (A-Z)? [Y/n]: y
+  Include digits (0-9)? [Y/n]: y
+  Include special symbols (!@#$%...)? [Y/n]: n
+
+How many passwords to generate (1-100) [Default: 1]: 2
+
+============================================================
+                    CONFIGURATION SUMMARY
+============================================================
+  Length:            12 characters
+  Character Types:   Lowercase, Uppercase, Digits (3/4)
+  Strength Rating:   [MEDIUM] - Moderate strength. Consider 14+ characters and all 4 types for maximum security.
+============================================================
+                    GENERATED PASSWORD(S)
+============================================================
+  [01]  mK8pQ2vR7tY1
+  [02]  9wNx4B7kLmP3
+============================================================
+  [Security Notice] Generated passwords are held strictly in memory
+  and are NOT stored or written to any file automatically.
+============================================================
+
+Would you like to generate another batch? [y/N]: n
+
+Thank you for using the CLI Password Generator. Stay secure!
+
+
+--------------------------------------------------------------------------------
+SAMPLE RUN 3: Weak Strength Password (8 Characters, Lowercase Only)
+--------------------------------------------------------------------------------
+$ python password_generator.py
+============================================================
+             CONFIGURABLE CLI PASSWORD GENERATOR
+             Level 1 Internship Project (Task 31)
+============================================================
+
+Enter password length (8-128): 8
+
+Select character types to include:
+  Include lowercase letters (a-z)? [Y/n]: y
+  Include uppercase letters (A-Z)? [Y/n]: n
+  Include digits (0-9)? [Y/n]: n
+  Include special symbols (!@#$%...)? [Y/n]: n
+
+How many passwords to generate (1-100) [Default: 1]: 1
+
+============================================================
+                    CONFIGURATION SUMMARY
+============================================================
+  Length:            8 characters
+  Character Types:   Lowercase (1/4)
+  Strength Rating:   [WEAK] - Short length or limited character types. Easily vulnerable to brute force.
+============================================================
+                    GENERATED PASSWORD(S)
+============================================================
+
+  Password:  tkfvpmzr
+
+============================================================
+  [Security Notice] Generated passwords are held strictly in memory
+  and are NOT stored or written to any file automatically.
+============================================================
+
+Would you like to generate another batch? [y/N]: n
+
+Thank you for using the CLI Password Generator. Stay secure!
+
+
+--------------------------------------------------------------------------------
+SAMPLE RUN 4: High-Entropy Master Key / Passphrase (32 Characters, All Types)
+--------------------------------------------------------------------------------
+$ python password_generator.py
+============================================================
+             CONFIGURABLE CLI PASSWORD GENERATOR
+             Level 1 Internship Project (Task 31)
+============================================================
+
+Enter password length (8-128): 32
+
+Select character types to include:
+  Include lowercase letters (a-z)? [Y/n]: y
+  Include uppercase letters (A-Z)? [Y/n]: y
+  Include digits (0-9)? [Y/n]: y
+  Include special symbols (!@#$%...)? [Y/n]: y
+
+How many passwords to generate (1-100) [Default: 1]: 1
+
+============================================================
+                    CONFIGURATION SUMMARY
+============================================================
+  Length:            32 characters
+  Character Types:   Lowercase, Uppercase, Digits, Symbols (4/4)
+  Strength Rating:   [STRONG] - Excellent length and diverse character variety.
+============================================================
+                    GENERATED PASSWORD(S)
+============================================================
+
+  Password:  h8#Km$2PvQ9!rW&zL4@xN7*tB1^yC6(v
+
+============================================================
+  [Security Notice] Generated passwords are held strictly in memory
+  and are NOT stored or written to any file automatically.
+============================================================
+
+Would you like to generate another batch? [y/N]: n
+
+Thank you for using the CLI Password Generator. Stay secure!
+
+
+--------------------------------------------------------------------------------
+SAMPLE RUN 5: Robust Input Validation & Re-prompting Demonstration
+--------------------------------------------------------------------------------
+$ python password_generator.py
+============================================================
+             CONFIGURABLE CLI PASSWORD GENERATOR
+             Level 1 Internship Project (Task 31)
+============================================================
+
+Enter password length (8-128): abc
+  [!] Invalid input: Please enter a whole numeric value.
+
+Enter password length (8-128): 4
+  [!] Invalid range: Length must be between 8 and 128.
+
+Enter password length (8-128): 200
+  [!] Invalid range: Length must be between 8 and 128.
+
+Enter password length (8-128): 16
+
+Select character types to include:
+  Include lowercase letters (a-z)? [Y/n]: n
+  Include uppercase letters (A-Z)? [Y/n]: n
+  Include digits (0-9)? [Y/n]: n
+  Include special symbols (!@#$%...)? [Y/n]: n
+
+  [!] Error: You must select at least one character type! Please try again.
+
+  Include lowercase letters (a-z)? [Y/n]: y
+  Include uppercase letters (A-Z)? [Y/n]: y
+  Include digits (0-9)? [Y/n]: y
+  Include special symbols (!@#$%...)? [Y/n]: y
+
+How many passwords to generate (1-100) [Default: 1]: zero
+  [!] Invalid input: Please enter a whole numeric value.
+
+How many passwords to generate (1-100) [Default: 1]: -5
+  [!] Count must be between 1 and 100.
+
+How many passwords to generate (1-100) [Default: 1]: 1
+
+============================================================
+                    CONFIGURATION SUMMARY
+============================================================
+  Length:            16 characters
+  Character Types:   Lowercase, Uppercase, Digits, Symbols (4/4)
+  Strength Rating:   [STRONG] - Excellent length and diverse character variety.
+============================================================
+                    GENERATED PASSWORD(S)
+============================================================
+
+  Password:  xR3@vP8$kM9#wL2!
+
+============================================================
+  [Security Notice] Generated passwords are held strictly in memory
+  and are NOT stored or written to any file automatically.
+============================================================
+
+Would you like to generate another batch? [y/N]: n
+
+Thank you for using the CLI Password Generator. Stay secure!
